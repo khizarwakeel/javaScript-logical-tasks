@@ -98,17 +98,17 @@
 
 // Question 18
 
-let visitCount = localStorage.getItem("visitCount");
+// let visitCount = localStorage.getItem("visitCount");
 
-if (!visitCount) {
-  visitCount = 0;
-}
+// if (!visitCount) {
+//   visitCount = 0;
+// }
 
-visitCount++;
+// visitCount++;
 
-localStorage.setItem("visitCount", visitCount);
+// localStorage.setItem("visitCount", visitCount);
 
-alert("You have visited this site " + visitCount + " times.");
+// alert("You have visited this site " + visitCount + " times.");
 
 // Question 19
 
