@@ -304,7 +304,7 @@
 //   console.log("Good afternoon!");
 // } else if (userTime >= 17 && userTime < 21) {
 //   console.log("Good evening!");
-// } else if (userTime >= 21 && userTime <= 24) {
+// } else if (userTime >= 21 && userTime <= 2359) {
 //   console.log("Good night!");
 // } else {
 //   console.log("Invalid time entered!");
