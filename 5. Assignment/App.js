@@ -173,3 +173,60 @@
 // }
 
 // console.log(numberArray);
+
+
+// Others Question Solved <<<<======>>>>
+
+// Question 1
+
+// for (let i = 1; i <= 5; i++) {
+//   for (let j = 1; j <= i; j++) {
+//     document.write(j+" ");
+//   }
+//   document.write("<br />");
+// }
+
+// Question 2
+
+// for (let i = 1; i <= 5; i++) {
+//   for (let j = 1; j <= i; j++) {
+//     document.write("* ");
+//   }
+//   document.write("<br />");
+// }
+
+// Question 3
+
+// for (let i = 5; i >= 1; i--) {
+//   for (let j = 5; j >= i; j--) {
+//     document.write(j + " ");
+//   }
+//   document.write("<br />");
+// }
+
+// Question 4
+
+// for (let i = 1; i <= 5; i++) {
+//   for (let j = 1; j <= 5; j++) {
+//     document.write(j + " ");
+//   }
+//   document.write("<br />");
+// }
+
+// Question 5
+
+// let word = prompt("Enter your word");
+// let check = "";
+
+// for (let i = word.length - 1; i >= 0; i--) {
+//   check += word[i];
+//   console.log(word[i]);
+// }
+// console.log(word, check);
+
+// if (word === check) {
+//   console.log(word, "is Palindrome word");
+// }
+// else {
+//   console.log(word, "is not a Palindrome word");
+// }
