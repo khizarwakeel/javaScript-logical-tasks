@@ -1,133 +1,133 @@
 // Question 1
 
-// alert("Welcome to my beautiful Website");
+alert("Welcome to my beautiful Website");
 
 // Question 2
 
-// alert("Error! Please Enter a valid password");
+alert("Error! Please Enter a valid password");
 
 // Question 3
 
-// alert("Welcome to JS Land... \n Happy Coding!")
+alert("Welcome to JS Land... \n Happy Coding!")
 
 // Question 4
 
-// alert("Welcome to JS Land...");
+alert("Welcome to JS Land...");
 
-// alert("Happy Coding \n <input type='checkbox' /> Prevent this page from additional dialogs");
+alert("Happy Coding \n <input type='checkbox' /> Prevent this page from additional dialogs");
 
 // Question 5
 
-// console.log("Hello... I can run JS through my web browser's console");
+console.log("Hello... I can run JS through my web browser's console");
 
 // Question 6
 // Question 7
 
 // Question 8
 
-// var userName;
+var userName;
 
 // Question 9
 
-// var myName = "Khizar Wakeel";
+var myName = "Khizar Wakeel";
 
 // Question 10
 
-// var message;
+var message;
 
-// message = "Hello World";
+message = "Hello World";
 
-// console.log(message);
+console.log(message);
 
 // Question 11
 
-// var stdName = "Khizar Wakeel";
+var stdName = "Khizar Wakeel";
 
-// alert(stdName);
+alert(stdName);
 
-// var stdAge = 24;
+var stdAge = 24;
 
-// alert(stdAge);
+alert(stdAge);
 
-// var stdCourse = "Certified Web and Mobile Application Development";
+var stdCourse = "Certified Web and Mobile Application Development";
 
-// alert(stdCourse);
+alert(stdCourse);
 
 // Question 12
 
-// var order = "Pizza";
+var order = "Pizza";
 
-// console.log(order);
-// console.log(order.slice(0, 4));
-// console.log(order.slice(0, 3));
-// console.log(order.slice(0, 2));
-// console.log(order.slice(0, 1));
+console.log(order);
+console.log(order.slice(0, 4));
+console.log(order.slice(0, 3));
+console.log(order.slice(0, 2));
+console.log(order.slice(0, 1));
 
 // Question 13
 
-// var email = "khizarwakeel@gmail.com";
+var email = "khizarwakeel@gmail.com";
 
-// alert("My email address is "+email)
+alert("My email address is "+email)
 
 // Question 14
 
-// var book = "“A smarter way to learn JavaScript”";
-// alert("I am trying to learn from the book " + book);
+var book = "“A smarter way to learn JavaScript”";
+alert("I am trying to learn from the book " + book);
 
 // Question 15
 
-// var userMessage = "Yah! I can write HTML content through JavaScript";
+var userMessage = "Yah! I can write HTML content through JavaScript";
 
-// document.write(userMessage);
+document.write(userMessage);
 
 // Question 16
 
-// var design = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
+var design = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
 
-// alert(design);
+alert(design);
 
-// document.write(design);
+document.write(design);
 
 // Question 17
 
-// var age;
+var age;
 
-// age = 24;
+age = 24;
 
-// alert("I am " + age + " years old!");
+alert("I am " + age + " years old!");
 
 // Question 18
 
-// let visitCount = localStorage.getItem("visitCount");
+let visitCount = localStorage.getItem("visitCount");
 
-// if (!visitCount) {
-//   visitCount = 0;
-// }
+if (!visitCount) {
+  visitCount = 0;
+}
 
-// visitCount++;
+visitCount++;
 
-// localStorage.setItem("visitCount", visitCount);
+localStorage.setItem("visitCount", visitCount);
 
-// alert("You have visited this site " + visitCount + " times.");
+alert("You have visited this site " + visitCount + " times.");
 
 // Question 19
 
-// var birthYear;
+var birthYear;
 
-// birthYear = 1999;
+birthYear = 1999;
 
-// document.write("I was born in " + birthYear);
-// document.write(
-//   "<br />Data type of my declared variable is " + typeof birthYear
-// );
+document.write("I was born in " + birthYear);
+document.write(
+  "<br />Data type of my declared variable is " + typeof birthYear
+);
 
 // Question 20
 
-// var vistorName = "John Doe";
-// var productTitle = "IPhone";
-// var quantity = 5;
-// var onlineShop = "www.amazon.com";
+var vistorName = "John Doe";
+var productTitle = "IPhone";
+var quantity = 5;
+var onlineShop = "www.amazon.com";
 
-// document.write(
-//   vistorName + " Ordered " + quantity + " T-Shirt(s) on " + onlineShop
-// );
+document.write(
+  vistorName + " Ordered " + quantity + " T-Shirt(s) on " + onlineShop
+);
