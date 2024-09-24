@@ -70,6 +70,8 @@ console.log(repeatString2('bar', 3));
 
 // Sixth Question
 
+let whichWord = "";
+
 function longestWordLength(str) {
     const words = str.replace(/[^\w\s]/g, '').split(' ');
 
@@ -78,14 +80,17 @@ function longestWordLength(str) {
     for (let i = 0; i < words.length; i++) {
         if (words[i].length > maxLength) {
             maxLength = words[i].length;
+            whichWord = words[i];
         }
     }
 
     return maxLength;
 }
 
-console.log(longestWordLength('Hi, where is the airport?'));
-console.log(longestWordLength('Thanks for stopping by!'));
+const result1 = longestWordLength('Hi, where is the airport?')
+console.log(result1, whichWord);
+const result2 = longestWordLength('Thanks for stopping by!')
+console.log(result2, whichWord);
 
 // Seventh Question
 
@@ -145,12 +150,22 @@ console.log(alphaOrder4("bar"));
 
 // Eleventh Question
 
-function isPalindrome(str) {
+let isPalindrome = false;
+
+function isPalindromeFunc(str) {
     const normalizedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
     const reversedStr = normalizedStr.split('').reverse().join('');
-    return normalizedStr === reversedStr;
+    if (normalizedStr === reversedStr) {
+        isPalindrome = true;
+    }
 }
 
-console.log(isPalindrome('Eva, Can I Stab Bats In A Cave?'));
-console.log(isPalindrome('Was It A Rat I Saw?'));
-console.log(isPalindrome('A nut for a jar of tuna?'));
+let palindromeSentence = 'Eva, Can I Stab Bats In A Cave?';
+isPalindromeFunc(palindromeSentence);
+
+if (isPalindrome) {
+    console.log(palindromeSentence, ": is a palindrome!")
+}
+else {
+    console.log(palindromeSentence, ": is not a palindrome!")
+}
