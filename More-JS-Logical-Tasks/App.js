@@ -50,14 +50,34 @@ console.log(min);
 // Find the missing numbers in a series from an array
 
 var arr = [50, 51, 52, 55, 56, 57, 58, 60, 63, 64, 65, 69, 70];
+var missingNum = [];
 
 for (var i = 0; i < arr.length; i++) {
     var diff = arr[i + 1] - arr[i];
     if (diff > 1) {
         for (var j = 1; j < diff; j++) {
-            console.log(arr[i] + j)
+            missingNum.push(arr[i] + j)
         }
     }
 }
 
-// Result => 53, 54, 59, 61, 62, 66, 67, 68
+console.log("Original Array", arr);
+console.log("Missing Number Array", missingNum)
+
+// Find the missing numbers in a series from an array and create new proper array with missing number
+
+var arr = [11, 13, 14, 15, 20];
+console.log("Before :", arr);
+
+// arr.splice(1, 0, 12); How this is working
+
+for (var i = 0; i < arr.length; i++) {
+    var diff = arr[i + 1] - arr[i];
+    if (diff > 1) {
+        for (var j = 1; j < diff; j++) {
+            arr.splice(i + j, 0, arr[i] + j)
+        }
+    }
+}
+
+console.log("After :", arr);
