@@ -81,3 +81,30 @@ for (var i = 0; i < arr.length; i++) {
 }
 
 console.log("After :", arr);
+
+// Generate Random HEX and RGB Color
+
+const randomColorUtility = (length) => {
+    let randomColor = Math.floor(Math.random() * length);
+    console.log(randomColor);
+
+    return randomColor;
+};
+
+const handleCreateRandomHexColor = () => {
+    const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+    let hexColor = '#';
+    for (let i = 0; i < 6; i++) {
+        hexColor += hex[randomColorUtility(hex.length)];
+        console.log(hexColor);
+
+    }
+    console.log(hexColor);
+};
+
+const handleCreateRandomRgbColor = () => {
+    const r = randomColorUtility(256);
+    const g = randomColorUtility(256);
+    const b = randomColorUtility(256);
+    console.log(`rgb(${r},${g},${b})`);
+};
