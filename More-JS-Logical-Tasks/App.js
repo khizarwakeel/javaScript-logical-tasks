@@ -108,3 +108,6 @@ const handleCreateRandomRgbColor = () => {
     const b = randomColorUtility(256);
     console.log(`rgb(${r},${g},${b})`);
 };
+
+// Changing Case of first and last name letter
+
