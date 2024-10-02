@@ -47,3 +47,12 @@ console.log(shape.perimeter());
 // B: 20 and NaN
 // C: 20 and 63
 // D: NaN and 63
+
+// Question 4
+
+console.log(+true);
+console.log(!'Lydia');
+
+// A: 1 and false
+// B: false and NaN
+// C: false and false
