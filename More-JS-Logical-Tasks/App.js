@@ -169,3 +169,52 @@ for (var i = 0; i < fullName.length; i++) {
 }
 
 console.log("Result =", result);
+
+// Replace the Third Occurrence of a Word in a String
+
+// First Way
+
+var str = "Saylani SMIT SMIT Mass SMIT Karachi SMIT";
+var word = "SMIT";
+var rep = "Saylani";
+var splitWord = str.split(" ");
+var counter = 0;
+
+console.log("Before =", str);
+
+for (var i = 0; i < splitWord.length; i++) {
+    if (splitWord[i] === word) {
+        counter += 1;
+        if (counter === 3) {
+            splitWord[i] = "Saylani";
+        }
+    }
+}
+
+str = splitWord.join(" ")
+console.log("After =", str);
+
+// Second Way
+
+var str = "Saylani SMIT SMIT Mass SMIT Karachi SMIT";
+var word = "SMIT";
+var rep = "Saylani";
+var counter = 0;
+
+console.log("Before =", str);
+
+for (var i = 0; i < str.length; i++) {
+
+    var wordFind = str.slice(i, i + word.length);
+
+    if (wordFind === word) {
+        counter += 1;
+        if (counter === 3) {
+            str = str.slice(0, i) + rep + str.slice(i + word.length);
+            break;
+        }
+    }
+}
+
+console.log("Count =", counter);
+console.log("After =", str);
