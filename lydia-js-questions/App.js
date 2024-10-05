@@ -102,3 +102,25 @@ console.log(b === c);
 // B: false false true
 // C: true false false
 // D: false true true
+
+// Question 8 
+
+// Pending this Question
+class Chameleon {
+    static colorChange(newColor) {
+        this.newColor = newColor;
+        return this.newColor;
+    }
+
+    constructor({ newColor = 'green' } = {}) {
+        this.newColor = newColor;
+    }
+}
+
+const freddie = new Chameleon({ newColor: 'purple' });
+console.log(freddie.colorChange('orange'));
+
+// A: orange
+// B: purple
+// C: green
+// D: TypeError
