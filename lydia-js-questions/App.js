@@ -87,3 +87,18 @@ console.log(d.greeting);
 // C: undefined
 // D: ReferenceError
 // E: TypeError
+
+// Question 7 
+
+let a = 3;
+let b = new Number(3);
+let c = 3;
+
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
+
+// A: true false true
+// B: false false true
+// C: true false false
+// D: false true true
