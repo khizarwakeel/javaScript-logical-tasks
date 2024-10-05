@@ -72,3 +72,18 @@ const mouse = {
 // B: mouse[bird.size] is not valid
 // C: mouse[bird["size"]] is not valid
 // D: All of them are valid
+
+// Question 6
+
+let c = { greeting: 'Hey!' };
+let d;
+
+d = c;
+c.greeting = 'Hello';
+console.log(d.greeting);
+
+// A: Hello
+// B: Hey!
+// C: undefined
+// D: ReferenceError
+// E: TypeError
