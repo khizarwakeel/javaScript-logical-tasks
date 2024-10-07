@@ -218,3 +218,9 @@ for (var i = 0; i < str.length; i++) {
 
 console.log("Count =", counter);
 console.log("After =", str);
+
+// Password Generator
+
+
+
+// Heads and Tails Game

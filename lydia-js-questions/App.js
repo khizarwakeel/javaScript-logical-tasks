@@ -124,3 +124,13 @@ console.log(freddie.colorChange('orange'));
 // B: purple
 // C: green
 // D: TypeError
+
+// Question 9
+
+let greeting;
+greetign = {}; // Typo!
+console.log(greetign);
+
+// A: {}
+// B: ReferenceError: greetign is not defined
+// C: undefined
