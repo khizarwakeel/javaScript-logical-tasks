@@ -134,3 +134,16 @@ console.log(greetign);
 // A: {}
 // B: ReferenceError: greetign is not defined
 // C: undefined
+
+// Question 10
+function bark() {
+    console.log('Woof!');
+}
+
+bark.animal = 'dog';
+bark();
+
+// A: Nothing, this is totally fine!
+// B: SyntaxError. You cannot add properties to a function this way.
+// C: "Woof" gets logged.
+// D: ReferenceError
