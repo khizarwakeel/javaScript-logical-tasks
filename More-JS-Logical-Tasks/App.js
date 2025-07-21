@@ -296,3 +296,63 @@ function fizzBuzz() {
 }
 
 fizzBuzz();
+
+// Slowest Key Press Algorithm
+
+// No HashMap
+
+function slowestKey(keyTimes) {
+    let maxDuration = 0;
+    let slowestKeyIndex = keyTimes[0][0]; // First key index
+    let prevTime = 0;
+    
+    for (const [keyIndex, time] of keyTimes) {
+        const duration = time - prevTime;
+        
+        if (duration > maxDuration) {
+            maxDuration = duration;
+            slowestKeyIndex = keyIndex;
+        }
+        
+        prevTime = time;
+    }
+    
+    return String.fromCharCode(slowestKeyIndex + 97); // 97 is 'a'
+}
+
+// Example usage:
+const keyTimes1 = [[0, 2], [1, 5], [0, 9], [2, 15]];
+console.log(slowestKey(keyTimes1)); // Output: 'c'
+
+// With HashMap
+
+function slowestKey(keyTimes) {
+    // Create a map to store time -> keyIndex mapping
+    const timeToKeyMap = new Map();
+    keyTimes.forEach(([keyIndex, time]) => {
+        timeToKeyMap.set(time, keyIndex);
+    });
+    
+    let maxDuration = 0;
+    let slowestTime = 0;
+    let prevTime = 0;
+    
+    for (const [keyIndex, time] of keyTimes) {
+        const duration = time - prevTime;
+        
+        if (duration > maxDuration) {
+            maxDuration = duration;
+            slowestTime = time;
+        }
+        
+        prevTime = time;
+    }
+    
+    // Get the key index from the map using the slowest time
+    const slowestKeyIndex = timeToKeyMap.get(slowestTime);
+    return String.fromCharCode(slowestKeyIndex + 97); // 97 is 'a'
+}
+
+// Example usage:
+const keyTimes2 = [[0, 2], [1, 5], [0, 9], [2, 15]];
+console.log(slowestKey(keyTimes2)); // Output: 'c'
